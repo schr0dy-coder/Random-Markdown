@@ -1,8 +1,9 @@
 # 🌟 Confluence: How It Works
+
 ### *Turning Grassroots Civic Challenges into Student-Built, Industry-Funded Realities*
 
 > **A Layman's Visual Guide for Judges, Citizens, Students, and Civic Leaders**
-> 
+>
 > *Confluence replaces bureaucratic black holes with a transparent, closed-loop innovation pipeline where real community problems meet university engineering talent, corporate funding, and citizen-verified results.*
 
 ---
@@ -13,7 +14,6 @@ Imagine a world where reporting a broken water pipe in your village doesn't just
 
 ```mermaid
 flowchart TD
-    %% Styling
     classDef citizen fill:#FEF3C7,stroke:#D97706,stroke-width:2px,color:#92400E;
     classDef ai fill:#EDE9FE,stroke:#7C3AED,stroke-width:2px,color:#5B21B6;
     classDef gov fill:#E0F2FE,stroke:#0284C7,stroke-width:2px,color:#075985;
@@ -62,7 +62,6 @@ flowchart TD
         VERIFY{"✅ Citizen Verification<br/><i>Does it actually work?</i>"}:::victory
         CLOSED["🎉 Verified & Resolved<br/><i>Permanent Public Track Record</i>"]:::victory
         REOPEN["🔄 Reopened for Rework<br/><i>Students fix community feedback</i>"]:::citizen
-        
         PILOT --> VERIFY
         VERIFY -->|Citizen Approves with Photo Evidence| CLOSED
         VERIFY -->|Citizen Still Faces Issue| REOPEN
@@ -98,57 +97,62 @@ sequenceDiagram
     actor Uni as 🎓 Prof. Sen (IIT ISM Dhanbad)
     actor Students as 👨‍🎓 Team JalShakti (Students)
     actor CSR as 🏭 Tata Steel CSR
-    
+
     Maya->>Phone: Takes photo of rusted municipal handpump oozing turbid water
     Note over Phone: Browser compresses 6MB photo down to 180KB in 200ms
     Phone->>AI: Submits with GPS (23.90°N, 86.20°E)
-    Note over AI: Categorizes: "Water & Sanitation"<br/>Duplicate Check: No duplicates in 2km radius<br/>Confidence: 94%
+    Note over AI: Categorizes: Water & Sanitation<br/>Duplicate check: no duplicates in 2km radius<br/>Confidence: 94%
     AI->>Officer: High-priority civic challenge created
-    Officer->>Uni: Validates problem & publishes to Jharkhand University Portal
-    Uni->>Uni: Adopts problem #CH-042 for Campus Innovation Cell
-    Uni->>Students: Issues 3-Week Open Call: "Low-Cost Arsenic/Turbidity Water Filter"
-    Students->>Uni: Submits Pitch with Dual-Package Model
-    Note over Students,Uni: Public Summary visible to public; Deep schematic encrypted for Review Board
+    Officer->>Uni: Validates problem and publishes to Jharkhand University Portal
+    Uni->>Uni: Adopts problem CH-042 for Campus Innovation Cell
+    Uni->>Students: Issues 3-week open call for low-cost water filter
+    Students->>Uni: Submits pitch with Dual-Package Model
+    Note over Students,Uni: Public summary visible to public<br/>Deep schematic encrypted for Review Board
     CSR->>Students: Reviews project and approves ₹75,000 pilot grant
-    Students->>Maya: Installs ceramic multi-stage solar filtration unit in Topchanchi village
-    Note over Students: Mark project "Field Deployed — Awaiting Verification"
-    Maya->>Phone: Inspects clean drinking water flow & uploads confirmation photo
+    Students->>Maya: Installs ceramic multi-stage solar filtration unit
+    Note over Students: Field deployed — awaiting verification
+    Maya->>Phone: Inspects clean drinking water flow and uploads confirmation photo
     Phone->>Officer: Community satisfaction score 5/5
-    Note over Officer,Maya: Status changes to "RESOLVED & PERMANENT"
+    Note over Officer,Maya: Status changes to RESOLVED & PERMANENT
 ```
 
 ---
 
 ## 🚀 The 4 Unique Superpowers of Confluence
+
 *(Why Judges and Policymakers Score This Platform #1)*
 
 ### 1. 🛡️ Closed-Loop Verification: "No Ghost Fixes"
-In traditional government grievance portals, an official frequently clicks **"Closed / Fixed"** from their desk without ever visiting the site. 
+
+In traditional government grievance portals, an official frequently clicks **"Closed / Fixed"** from their desk without ever visiting the site.
 
 On **Confluence, this is mathematically impossible**:
+
 - When a university team deploys a solution, the challenge enters **"Awaiting Citizen Verification"**.
 - The citizen who reported the problem receives a push prompt with camera verification.
 - Only when the citizen inspects the physical fix and gives sign-off does the platform mark the issue **Resolved**.
 - If the fix fails, the citizen clicks **"Still Broken"**—which automatically moves the issue back into the student engineering queue with actionable feedback!
 
 ```mermaid
-graph LR
-    subgraph Traditional Portals ["❌ Old Bureaucracy"]
+flowchart LR
+    subgraph traditional["❌ Old Bureaucracy"]
         T1["Citizen Complains"] --> T2["Bureaucrat Clicks 'Resolved'"] --> T3["Problem Still Exists in Reality 👻"]
     end
 
-    subgraph Confluence ["✅ Confluence Closed Loop"]
+    subgraph confluence["✅ Confluence Closed Loop"]
         C1["Citizen Reports"] --> C2["University Deploys Fix"] --> C3["Citizen Physically Verifies"] --> C4["Verified Solved on Blockchain/Audit Log 🌟"]
     end
 
-    style Traditional Portals fill:#FFF1F2,stroke:#E11D48,color:#9F1239
-    style Confluence fill:#ECFDF5,stroke:#059669,color:#065F46
+    style traditional fill:#FFF1F2,stroke:#E11D48,color:#9F1239
+    style confluence fill:#ECFDF5,stroke:#059669,color:#065F46
 ```
 
 ---
 
 ### 2. ⚡ Bandwidth-Friendly Rural Edge (Client-Side Compression)
+
 Citizens in rural, tribal, or low-connectivity zones often face unstable 2G/3G networks or strict mobile data limits.
+
 - If an app forces them to upload raw 10MB camera photos, 70% of submissions time out or fail.
 - **Confluence's Edge Engine** uses an in-browser HTML5 Canvas compressor before any byte travels across the network.
 - High-resolution images are scaled and re-encoded locally in under **250 milliseconds**.
@@ -160,6 +164,7 @@ Citizens in rural, tribal, or low-connectivity zones often face unstable 2G/3G n
 ---
 
 ### 3. 🔐 The Dual-Package IP Shield (Protecting Student Inventors)
+
 Students often hesitate to submit innovative ideas to public competitions because they fear corporate sponsors or competitors might steal their designs.
 
 Confluence solves this with a **Two-Compartment Pitch Model**:
@@ -169,13 +174,11 @@ flowchart TD
     subgraph DUAL ["📦 Every Student Submission Contains Two Layers"]
         direction TB
         PUB["🌐 Layer 1: Public Showcase Package<br/><b>What the World Sees:</b><br/>• Problem summary<br/>• High-level methodology<br/>• Team members & university credentials<br/>• Community discussion forum"]
-        
         CONF["🔒 Layer 2: Confidential Technical Dossier<br/><b>Protected by Strict Role-Based Encryption:</b><br/>• CAD blueprints & circuit schematics<br/>• Full source code repositories<br/>• Bill of materials & unit cost calculations<br/>• Proprietary algorithms & patents"]
     end
 
     AUDIENCE1["👥 Public, Citizens & Community"]
     AUDIENCE2["⚖️ Authorized University Jury & CSR Evaluators"]
-
     PUB ==> AUDIENCE1
     CONF ==> AUDIENCE2
 
@@ -186,7 +189,9 @@ flowchart TD
 ---
 
 ### 4. 🧠 Instant AI Triage & Deduplication
+
 Municipalities often drown in duplicate complaints when five neighbors report the same fallen tree or damaged transformer.
+
 - When an issue is logged, Confluence's **AI Microservice** cross-references the title, description, and GPS coordinates against existing district issues.
 - If it's a suspected duplicate, it automatically links it to the master issue rather than fragmenting municipal resources.
 - If it's unique, it automatically tags the problem domain (e.g. *Water & Sanitation*, *Urban Infrastructure*, *Rural Energy*), calculates an urgency score, and directs it to the appropriate university department.
@@ -208,8 +213,9 @@ Municipalities often drown in duplicate complaints when five neighbors report th
 ## 🏆 Summary for Evaluation Panels
 
 > Confluence is **not just another grievance reporting portal**, and it is **not just another hackathon app**.
-> 
+>
 > It is an **integrated civic operating system** that bridges three historically isolated silos:
+>
 > 1. **Citizens who have problems but no engineers.**
 > 2. **Students who have engineering skills but lack real problems.**
 > 3. **Government & Industry who have funds but lack ground-level execution.**
